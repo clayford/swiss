@@ -1,11 +1,15 @@
+
+library(effects)
+library(car)
+
 data(swiss)
 summary(swiss)
-pairs(swiss)
+# pairs(swiss)
+scatterplotMatrix(swiss)
 
 mod <- lm(Fertility ~ ., data = swiss)
 summary(mod)
 
-library(effects)
 
 plot(Effect("Education", mod))
 plot(Effect("Catholic", mod))
