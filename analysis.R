@@ -19,3 +19,5 @@ plot(mod)
 par(op)
 
 cor(swiss)
+
+apply(swiss, 2, function(x)c(mean = mean(x), sd = sd(x), median = median(x), iqr = IQR(x)))
