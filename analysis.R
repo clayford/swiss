@@ -17,3 +17,5 @@ plot(Effect("Catholic", mod))
 op <- par(mfrow=c(2,2))
 plot(mod)
 par(op)
+
+cor(swiss)
